@@ -1,0 +1,28 @@
+
+# pg 库连接配置
+DbCfg:
+  DefaultDSN: "host=127.0.0.1 port=5432 user=postgres password=postgres dbname=postgres"
+  QueryTimeout: 100000
+  MaxIdleConns: 10
+  MaxOpenConns: 500
+  LogLevel: info
+
+# 财务数据配置表
+CfgTable:
+  SchemaName: topview
+  TaskInfo: taskitems
+  FinInfo: tableinfo
+  FieldInfo: cj_index
+  Fin2Table: basicinfo
+
+# http配置
+Service:
+  HttpPort: 8080
+  Timeout: 100
+  SubscribeServer:
+
+# 程序基本配置
+Setting:
+  RowLimit: 10000
+  LogPath:
+  StatLogPath:
